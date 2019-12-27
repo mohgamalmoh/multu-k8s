@@ -3,7 +3,6 @@ kind: Ingress
 metadata:
         name: ingress-service
         annotations:
-                kubernetes.io/ingress.class: nginx
                 nginx.ingress.kubernetes.io/rewrite-target: /$1
                 nginx.ingress.kubernetes.io/default-backend: client-cluster-ip-service
 spec:
